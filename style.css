@@ -13,6 +13,7 @@ html {
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
+    /* overflow: hidden; */
 }
 
 
@@ -128,7 +129,7 @@ html {
     opacity: .6;
 }
 
-@media (max-width:376px) {
+@media (max-width:420px) {
     .price_card {
         grid-template-areas: 
     'header'
