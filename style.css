@@ -100,6 +100,12 @@ html {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
+    transition: 0.5s;
+}
+
+.signup:hover {
+    background: #fff;
+    color:hsl(71, 73%, 54%);
 }
 
 .why_us {
