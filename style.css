@@ -23,7 +23,7 @@ html {
     'price_plan why_us'
     ;
     background: #fff;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     margin-top: 20vh;
     border-radius: 10px;
@@ -61,7 +61,7 @@ html {
     width: 100%;
     border-bottom-left-radius: 10px;
     color: #fff;
-    padding: 2rem;
+    padding: 2rem 3rem;
 }
 
 .price_plan h3 {
@@ -115,7 +115,7 @@ html {
     width: 100%;
     border-bottom-right-radius: 10px;
     color: #fff;
-    padding: 2rem;
+    padding: 2rem 3rem;
 }
 
 .why_us h3 {
