@@ -1,0 +1,189 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 10px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html {
+    background:hsl(204, 43%, 93%);
+}
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.price_card {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'price_plan why_us'
+    ;
+    background: #fff;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 10px;
+    justify-self: center;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    grid-area: header;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    
+}
+
+.header h1 {
+    color:hsl(179, 62%, 43%);
+    /* opacity: 0.9; */
+}
+.header h2 {
+    color:hsl(71, 73%, 54%);
+    padding: 1.5rem 0 0 0;
+}
+.header p {
+    color:hsl(218, 22%, 67%);
+    padding: 1rem 0;
+    line-height: 1.8rem;
+    font-weight: 600;
+    opacity: .6;
+    padding-bottom: 1rem;
+}
+
+.price_plan {
+    background: hsl(179, 62%, 43%);
+    grid-area: price_plan;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    padding: 2rem;
+}
+
+.price_plan h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.price_plan .price {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+.price_plan .price #price {
+    font-size: 3rem;
+    padding-right: 1.5rem;
+    font-weight: 800;
+}
+
+.price_plan .price #month {
+   opacity: .6; 
+   padding-top: 16px;  
+}
+
+.price_plan p #line {
+    opacity: 0.8;
+}
+
+.signup {
+    background: hsl(71, 73%, 54%);
+    width: 100%;
+    margin: auto;
+    margin-top: 1.2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.why_us {
+    background: hsl(179, 62%, 43%);
+    opacity: .8;
+    grid-area: why_us;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    padding: 2rem;
+}
+
+.why_us h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.why_us p {
+    font-size: 1.2rem;
+    padding-bottom: 1.5rem;
+    opacity: .6;
+}
+
+@media (max-width:376px) {
+    .price_card {
+        grid-template-areas: 
+    'header'
+    'price_plan'
+    'why_us'
+    ;
+        background: #fff;
+        margin: 40px 20px;
+        border-radius: 10px;
+        justify-self: center;
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    .header p {
+        line-height: 1.4rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+    }
+
+    .price_plan {  
+        grid-area: price_plan;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+        font-size: 0.8rem;
+    }
+
+    .price_plan h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .price_plan .price {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .why_us {
+        grid-area: why_us;
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .why_us h3 {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .why_us p {
+        font-size: 0.8rem;
+        padding-bottom: 1rem;
+        line-height: 1.4rem;
+    }
+    
+}
